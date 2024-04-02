@@ -1,0 +1,71 @@
+.NavbarItems {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add bottom border shadow */
+}
+
+.navbar-logo {
+    color: #9C13BE;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.menu-icon {
+    display: none;
+}
+
+/* Button styles */
+button {
+    background-color: #f0f0f0; /* Faded gray color */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ddd; /* Darken button color on hover */
+}
+
+@media screen and (max-width: 768px) {
+    .NavbarItems {
+      background: #daebc3;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 1.2rem;
+      position: relative;
+    }
+  
+    .navbar-logo {
+      color: #9c13be;
+      margin: 20px 0;
+      cursor: pointer;
+    }
+  
+    .menu-icon {
+      display: block;
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      font-size: 1.5rem;
+      cursor: pointer;
+      z-index: 2;
+    }
+  
+    /* Centering h1 */
+    h1 {
+      text-align: center;
+    }
+  
+    /* Adjust margin for h2 and button */
+    h2,
+    button {
+      margin-top: 10px;
+    }
+  }
